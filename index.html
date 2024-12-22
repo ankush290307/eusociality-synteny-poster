@@ -4,66 +4,194 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Eusociality and Haplodiploidy in Hymenoptera</title>
+  
+  <!-- SEO Meta Tags -->
+  <meta name="description" content="Interactive poster website showcasing research on how Eusociality and Haplodiploidy drive synteny conservation in Hymenoptera.">
+  <meta name="keywords" content="Eusociality, Haplodiploidy, Synteny Conservation, Hymenoptera, Genome Stability, Insect Biodiversity, Honeybees, Ants, Wasps">
+  <meta name="author" content="Ankush Sharma, John E. Bowers, Andrew H. Paterson">
+
   <!-- Bootstrap CSS -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+  
+  <!-- Lightbox2 CSS -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/css/lightbox.min.css" rel="stylesheet">
+  
   <!-- Custom CSS -->
   <link rel="stylesheet" href="css/styles.css">
-  <!-- GSAP for Animations -->
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollReveal/4.0.9/scrollreveal.min.js"></script>
+  
+  <!-- Favicon (Optional) -->
+  <link rel="icon" href="assets/images/honeybee-icon.svg" type="image/svg+xml">
+  
+  <!-- GSAP and ScrollReveal for Animations -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js" defer></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollReveal/4.0.9/scrollreveal.min.js" defer></script>
 </head>
 <body>
   
-  <!-- Header -->
-  <header class="bg-primary text-white text-center py-5">
-    <div class="container">
-      <h1>Eusociality and Haplodiploidy Drives Synteny Conservation in Hymenoptera</h1>
+  <!-- Navigation Bar -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">Hymenoptera Research</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" 
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="#introduction">Introduction</a></li>
+          <li class="nav-item"><a class="nav-link" href="#what-we-know">What We Know</a></li>
+          <li class="nav-item"><a class="nav-link" href="#methods">Methods</a></li>
+          <li class="nav-item"><a class="nav-link" href="#results">Results</a></li>
+          <li class="nav-item"><a class="nav-link" href="#podcast">Podcast</a></li>
+          <li class="nav-item"><a class="nav-link" href="#gallery">Gallery</a></li>
+          <li class="nav-item"><a class="nav-link" href="#videos">Videos</a></li>
+          <li class="nav-item"><a class="nav-link" href="#conclusion">Conclusion</a></li>
+          <li class="nav-item"><a class="nav-link" href="#references">References</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  
+  <!-- Header Section with Parallax Background -->
+  <header class="header-section text-white text-center">
+    <div class="overlay"></div>
+    <div class="container h-100 d-flex flex-column justify-content-center">
+      <h1 class="display-4">Eusociality and Haplodiploidy in Hymenoptera</h1>
       <p class="lead">Ankush Sharma<sup>1,3</sup>, John E. Bowers<sup>1</sup>, Andrew H. Paterson<sup>1</sup></p>
       <p><small>1. Plant Genome Mapping Laboratory, University of Georgia, Athens, GA, 30602, USA</small></p>
       <p><small>3. Institute of Bioinformatics, University of Georgia, Athens, GA, 30602, USA</small></p>
+      <button id="darkModeToggle" class="btn btn-secondary mt-4">Toggle Dark Mode</button>
     </div>
   </header>
   
-  <!-- Introduction -->
+  <!-- Introduction Section -->
   <section id="introduction" class="py-5">
     <div class="container">
-      <h2>Introduction</h2>
-      <p>Eusociality and haplodiploidy have been strong drivers of genome stability and species diversification among insects...</p>
+      <h2 class="mb-4">Introduction</h2>
+      <p>Eusociality and haplodiploidy have been strong drivers of genome stability and species diversification among insects. This study delves into the genomic intricacies of hymenopteran species, including ants, bees, and wasps, exploring how these social structures influence genetic conservation and biodiversity.</p>
     </div>
   </section>
   
-  <!-- Methods -->
-  <section id="methods" class="bg-light py-5">
+  <!-- What We Know So Far Section -->
+  <section id="what-we-know" class="bg-light py-5">
     <div class="container">
-      <h2>Methods</h2>
-      <p>This study analyzed chromosome-scale genomes from hymenopteran species using comparative genomics and PGLS models...</p>
+      <h2 class="mb-4">What We Know So Far</h2>
+      <p>Prior research has established the significance of eusocial behavior in promoting genetic diversity and stability. Haplodiploidy, a unique sex determination mechanism, plays a crucial role in maintaining genomic integrity by eliminating deleterious alleles. These factors collectively contribute to the evolutionary success of Hymenoptera.</p>
+      <ul>
+        <li>Eusociality enhances cooperation and division of labor within colonies.</li>
+        <li>Haplodiploidy facilitates effective purging of harmful recessive alleles.</li>
+        <li>Genomic stability is linked to reduced mutation rates and stronger purifying selection.</li>
+      </ul>
     </div>
   </section>
   
-  <!-- Results -->
-  <section id="results" class="py-5">
+  <!-- Methods Section -->
+  <section id="methods" class="py-5">
     <div class="container">
-      <h2>Results</h2>
-      <p>Eusocial Hymenoptera exhibit far greater levels of syntenic conservation compared with their nonsocial relatives...</p>
-      <!-- Interactive Chart Example -->
-      <div class="chart-container">
+      <h2 class="mb-4">Methods</h2>
+      <p>This study analyzed chromosome-scale genomes from various hymenopteran species using comparative genomics and Phylogenetic Generalized Least Squares (PGLS) models. These models account for shared evolutionary histories, enabling a robust analysis of syntenic conservation across social and nonsocial species.</p>
+      <div class="mt-4">
+        <h5>Key Techniques:</h5>
+        <ul>
+          <li>Comparative Genomic Analysis</li>
+          <li>Phylogenetic Generalized Least Squares (PGLS) Models</li>
+          <li>Chromosome-Scale Genome Sequencing</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+  
+  <!-- Results Section with Interactive Chart -->
+  <section id="results" class="bg-light py-5">
+    <div class="container">
+      <h2 class="mb-4">Results</h2>
+      <p>Eusocial Hymenoptera exhibit significantly higher levels of syntenic conservation compared to their nonsocial counterparts and other insect groups. The PGLS analysis confirms the strong association between social complexity and genomic stability, highlighting the role of haplodiploidy in maintaining conserved gene order.</p>
+      <div class="chart-container my-5">
         <canvas id="resultsChart"></canvas>
       </div>
     </div>
   </section>
   
-  <!-- Conclusion -->
-  <section id="conclusion" class="bg-light py-5">
+  <!-- Podcast/Multimedia Section -->
+  <section id="podcast" class="py-5">
     <div class="container">
-      <h2>Conclusion</h2>
-      <p>By showing how haplodiploidy and eusociality together maintain high syntenic conservation...</p>
+      <h2 class="mb-4">Podcast: Exploring Hymenoptera Genomics</h2>
+      <div class="row">
+        <div class="col-md-6">
+          <audio controls class="w-100">
+            <source src="assets/audio/podcast.mp3" type="audio/mpeg">
+            Your browser does not support the audio element.
+          </audio>
+        </div>
+        <div class="col-md-6">
+          <h5>Podcast Transcript</h5>
+          <p>In this episode, we discuss the fascinating interplay between eusociality and haplodiploidy in Hymenoptera, exploring how these factors drive synteny conservation and contribute to the remarkable biodiversity of ants, bees, and wasps.</p>
+          <a href="assets/transcripts/podcast-transcript.pdf" class="btn btn-primary" target="_blank">Download Transcript</a>
+        </div>
+      </div>
     </div>
   </section>
   
-  <!-- References -->
-  <section id="references" class="py-5">
+  <!-- Image Gallery Section -->
+  <section id="gallery" class="bg-light py-5">
     <div class="container">
-      <h2>References</h2>
+      <h2 class="mb-4">Image Gallery</h2>
+      <div class="row g-4">
+        <div class="col-md-4">
+          <a href="assets/images/honeybee-1.jpg" data-lightbox="gallery" data-title="Honeybee Anatomy">
+            <img src="assets/images/honeybee-1.jpg" class="img-fluid rounded" alt="Detailed view of honeybee anatomy showing various body parts" loading="lazy">
+          </a>
+        </div>
+        <div class="col-md-4">
+          <a href="assets/images/honeybee-2.jpg" data-lightbox="gallery" data-title="Honeybee Colony">
+            <img src="assets/images/honeybee-2.jpg" class="img-fluid rounded" alt="A thriving honeybee colony in action" loading="lazy">
+          </a>
+        </div>
+        <!-- Add more images as needed -->
+      </div>
+    </div>
+  </section>
+  
+  <!-- Videos Section -->
+  <section id="videos" class="py-5">
+    <div class="container">
+      <h2 class="mb-4">Videos</h2>
+      <div class="row g-4">
+        <div class="col-md-6">
+          <div class="embed-responsive embed-responsive-16by9">
+            <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/YOUR_VIDEO_ID" 
+              allowfullscreen></iframe>
+          </div>
+          <p class="mt-2">Understanding Haplodiploidy in Hymenoptera</p>
+        </div>
+        <div class="col-md-6">
+          <div class="embed-responsive embed-responsive-16by9">
+            <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/YOUR_VIDEO_ID" 
+              allowfullscreen></iframe>
+          </div>
+          <p class="mt-2">Eusociality and Its Genetic Implications</p>
+        </div>
+        <!-- Add more videos as needed -->
+      </div>
+    </div>
+  </section>
+  
+  <!-- Conclusion Section -->
+  <section id="conclusion" class="py-5">
+    <div class="container">
+      <h2 class="mb-4">Conclusion</h2>
+      <p>This study elucidates the pivotal role of eusociality and haplodiploidy in maintaining high syntenic conservation within Hymenoptera. These findings advance our understanding of the genetic mechanisms that underpin speciation and long-term genome integrity in socially complex insect lineages.</p>
+      <p>Future research integrating population genomics, behavioral assays, and broader phylogenetic sampling will further unravel the interactions between haplodiploidy, social evolution, and chromosomal structure across diverse hexapod taxa.</p>
+    </div>
+  </section>
+  
+  <!-- References Section -->
+  <section id="references" class="bg-light py-5">
+    <div class="container">
+      <h2 class="mb-4">References</h2>
       <ul>
         <li>Sharma, A., Bowers, J. E., & Paterson, A. H. (Year). Eusociality and Haplodiploidy Drives Synteny Conservation in Hymenoptera.</li>
         <!-- Add more references as needed -->
@@ -72,7 +200,7 @@
   </section>
   
   <!-- Footer -->
-  <footer class="bg-dark text-white text-center py-4">
+  <footer class="footer bg-dark text-white text-center py-4">
     <div class="container">
       <p>&copy; 2024 University of Georgia. All rights reserved.</p>
       <p>Contact: <a href="mailto:email@uga.edu" class="text-white">email@uga.edu</a></p>
@@ -82,10 +210,14 @@
   
   <!-- Bootstrap JS and dependencies -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
-  <!-- Chart.js for Charts -->
+  
+  <!-- Lightbox2 JS -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/js/lightbox.min.js"></script>
+  
+  <!-- Chart.js for Interactive Charts -->
   <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  
   <!-- Custom JS -->
-  <script src="js/scripts.js"></script>
+  <script src="js/scripts.js" defer></script>
 </body>
 </html>
-
